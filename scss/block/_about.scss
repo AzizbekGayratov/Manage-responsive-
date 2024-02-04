@@ -1,0 +1,126 @@
+.about {
+    padding-top: 120px;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+    }
+
+    &__content {
+        max-width: 445px;
+    }
+
+    &__item {
+        max-width: 540px;
+        padding-left: 95px;
+        background-repeat: no-repeat;
+        background-image: url('/img/about.svg');
+    }
+
+    &__mobile_list {
+        display: none;
+    }
+
+    &__mobile_item {
+        margin-bottom: 47px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about {
+    &__title {
+        color: #242d52;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -0.71px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: #ADB0BE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &__sub_title {
+        color: #242d52;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: -0.29px;
+        margin-bottom: 19px;
+    }
+
+    &__inner_text {
+        color: #ADB0BE;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &__mobile_title {
+        color: #242d52;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: -0.29px;
+        padding: 6px 0 10px 82px;
+        background-repeat: no-repeat;
+        background-image: url('/img/about.svg');
+        border-radius: 39px 0px 0px 39px;
+        background-color: rgb(255, 240, 236);
+        margin-bottom: 8px;
+    }
+
+    &__mobile_text {
+        color: #ADB0BE;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+}
+
+@media screen and (max-width:1060px) {
+    .about__content {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .about {
+        padding-top: 90px;
+
+        &__block {
+            flex-direction: column;
+            gap: 54px;
+        }
+
+        &__content {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__mobile_list {
+            display: inline-block;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

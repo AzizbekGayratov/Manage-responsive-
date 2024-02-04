@@ -1,0 +1,122 @@
+.footer {
+    background-color: #1d1e25;
+
+    &__mobile_block {
+        display: none;
+    }
+
+    &__desktop_block {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 65px 0;
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+
+        a {
+            display: inline-block;
+        }
+    }
+}
+
+.footer {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    &__link {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: -0.23px;
+        transition: all 0.1s ease;
+
+        &:hover {
+            color: #f3603c;
+        }
+    }
+}
+
+.footer {
+    &__btn {
+        display: inline-block;
+        padding: 12px 23px 13px 24px;
+        border-radius: 22px;
+        background-color: #f3603c;
+        color: #fcf6f5;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            background-color: #f98f75;
+        }
+    }
+
+    &__btn:first-child {
+        padding: 11px 41px 14px 16px;
+        color: #8d8d8d;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: -0.1px;
+        border-radius: 22px;
+        background-color: #ffffff;
+        margin-right: 8px;
+
+        &:hover {
+            color: #f33c3c;
+        }
+    }
+
+    &__cap {
+        display: block;
+        color: #ADB0BE;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: -0.2px;
+        text-align: right;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer__desktop_block {
+        display: none;
+    }
+
+    .footer {
+        &__mobile_block {
+            display: block;
+            text-align: center;
+            padding: 50px 0 30px 0
+        }
+
+        &__lists {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px 0 20px;
+            text-align: left;
+            margin-top: 54px;
+            margin-bottom: 50px;
+        }
+        
+        &__cap{
+            text-align: center;
+        }
+        
+        &__btn:first-child{
+            padding-left: 24px;
+            padding-right: 72px;
+        }
+    }
+}
